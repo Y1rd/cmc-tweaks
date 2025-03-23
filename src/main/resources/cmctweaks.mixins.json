@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "birb.yird.cmctweaks.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "cmctweaks.refmap.json",
+  "mixins": [
+    "GolemAttackPatch",
+    "VillagerFearPatch"
+  ],
+  "client": [
+  ],
+  "minVersion": "0.8"
+}
