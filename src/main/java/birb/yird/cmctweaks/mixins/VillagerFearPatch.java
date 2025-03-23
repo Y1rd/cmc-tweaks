@@ -10,7 +10,6 @@ import java.util.Collection;
 
 @Mixin(TransfurVariant.Builder.class)
 public class VillagerFearPatch {
-
     @ModifyArg(
             method = "<init>",
             at = @At(
