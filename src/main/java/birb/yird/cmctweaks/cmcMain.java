@@ -19,12 +19,11 @@ import java.util.stream.Collectors;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("cmctweaks")
-public class ExampleMod
+public class cmcMain
 {
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
-
-    public ExampleMod()
+    public cmcMain()
     {
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
@@ -39,9 +38,7 @@ public class ExampleMod
 
     private void setup(final FMLCommonSetupEvent event)
     {
-        // some preinit code
-        LOGGER.info("HELLO FROM PREINIT");
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+        LOGGER.info("CMCTweaks was here.");
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
